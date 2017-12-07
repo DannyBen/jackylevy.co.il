@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  /*background: transparent url("/img/2.jpg") center/cover no-repeat;*/
+  color: black;
+  overflow: hidden;
+  font-family: arial;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+section {
+  margin-bottom: 8vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+article {
+  margin: 0 auto;
+}
+
+footer {
+  /*background: #ccc;*/
+  line-height: 1.5;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-family: 'Secular One', sans-serif;
+}
+
+a {
+  color: black;
+  display: inline-block;
+  padding: 6px 30px;
+  background: #99f;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+a:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+h1 {
+  font-family: 'Secular One', sans-serif;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.center {
+  text-align: center;
+}
+
+.card {
+  /*text-align: center;*/
+  background: rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+/* desktop */
+@media ( min-width : 768px ) {
+  main {
+    padding: 10px;
+  }
+
+  article {
+    width: 80%;
+    margin-top: 10vh;
+  }
+
+  .card {
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height: 80px;
+  }
+
+  footer {
+    bottom: 30px;
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+}
+
+/* mobile */
+@media ( max-width : 767px ) {
+  main {
+    padding: 10px;
+  }
+  
+  .card {
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  a {
+    padding: 4px;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  footer {
+    bottom: 6px;
+    background: #fff;
+    font-size: 22px;
+    width: 95%;
+    text-align: center;
+  }
+}
+
+
+
