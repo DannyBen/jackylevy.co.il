@@ -11,42 +11,48 @@
     <link rel="stylesheet" media="all" href="/css/animation.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   </head>
 
   <body dir="rtl">
+    <!-- <img src="http://deelay.me/100/image.gif" style="display: none"> -->
     <main>
+      <div id='preload'>
+        <div class='spinner'></div>
+      </div>
+
       <header>
-        <h1>ג'קי לוי</h1>
-        <h2>טכנאי מחשבים מנוסה בפתח-תקוה והסביבה</h2>
+        <h1 class='animate'>ג'קי לוי</h1>
+        <h2 class='animate'>טכנאי מחשבים מנוסה בפתח-תקוה והסביבה</h2>
       </header>
 
       <article>
         <div class='row'>
-          <div class='card col span_6' id='card1'>
+          <div class='animate card col span_6' id='card1'>
             <h3>תיקון מחשבים נייחים וניידים</h3>
             <p>בבית הלקוח או במעבדה</p>
           </div>
-          <div class='card col span_6' id='card2'>
+          <div class='animate card col span_6' id='card2'>
             <h3>תמיכה מרחוק</h3>
-            <p>למערכות מבוססות Windows</p>
+            <p>באמצעות שיתוף מסך, למערכות מבוססות Windows</p>
           </div>
         </div>
         <div class='row'>
-          <div class='card col span_6' id='card3'>
+          <div class='animate card col span_6' id='card3'>
             <h3>לימוד והדרכה</h3>
             <p>במחשבים מבוססי Windows</p>
           </div>
-          <div class='card col span_6' id='card4'>
+          <div class='animate card col span_6' id='card4'>
             <h3>תמיכה בחיבור לאינטרנט</h3>
             <p>לחיבור אלחוטי \ קווי</p>
           </div>
         </div>
         <div class='row'>
-          <div class='card col span_6' id='card5'>
+          <div class='animate card col span_6' id='card5'>
             <h3>מכירת מחשבים יד שניה</h3>
-            <p>אפשר גם בטרייד-אין</p>
+            <p>אפשרות גם לטרייד-אין</p>
           </div>
-          <div class='card col span_6' id='card6'>
+          <div class='animate card col span_6' id='card6'>
             <h3>תמיכה בטלפונים סלולרים וטאבלטים</h3>
             <p>גיבוי אנשי קשר, הורדת תמונות  למחשב וכו'</p>
           </div>
@@ -54,9 +60,18 @@
       </article>
 
       <footer>
-        <a id='button1' href='tel:123123123'>054-1231231</a>
-        <a id='button2' href='mailto:jacky@gmail.com'>jacky@gmail.com</a>
+        <a class='animate' id='button1' href='tel:123123123'>054-1231231</a>
+        <a class='animate' id='button2' href='mailto:jacky@gmail.com'>jacky@gmail.com</a>
       </footer>
     </main>
+
+    <script>
+      $(function() {
+        $(window).load(function(){
+          document.getElementById('preload').style.display = 'none';
+          $('.animate').addClass('animated');
+        });
+      });
+    </script>
   </body>
 </html>
