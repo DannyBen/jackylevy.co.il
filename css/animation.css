@@ -8,11 +8,6 @@
   100% { transform: translate(0, 0);    opacity: 1; }
 }
 
-@keyframes background {
-  0%   { background: transparent url("/img/1.jpg") center/cover no-repeat; }
-  100% { background: transparent url("/img/2.jpg") center/cover no-repeat; }
-}
-
 h1, h2, .card, a { opacity: 0; }
 
 .ready h1 { animation: 1s reveal ease-out forwards; }
@@ -27,5 +22,3 @@ h1, h2, .card, a { opacity: 0; }
 
 .ready #button1 { animation: 0.4s slide-in 1.6s ease-in forwards; }
 .ready #button2 { animation: 0.5s slide-in 1.6s ease-in forwards; }
-
-/*body.ready { animation: 5s background 5s linear infinite alternate;}*/

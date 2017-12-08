@@ -1,7 +1,7 @@
 
 $(function() {
   var bgImages = 9;
-  var bgTransition = 3;
+  var bgTransition = 4;
 
   var transitionAdded = false;
 
