@@ -4,22 +4,28 @@
 }
 
 @keyframes slide-in {
-	0%   { transform: translate(0, 90px); opacity: 0; }
-	100% { transform: translate(0, 0);    opacity: 1; }
+  0%   { transform: translate(0, 90px); opacity: 0; }
+  100% { transform: translate(0, 0);    opacity: 1; }
+}
+
+@keyframes background {
+  0%   { background: transparent url("/img/1.jpg") center/cover no-repeat; }
+  100% { background: transparent url("/img/2.jpg") center/cover no-repeat; }
 }
 
 h1, h2, .card, a { opacity: 0; }
 
-h1.animated { animation: 1s reveal ease-out forwards; }
-h2.animated { animation: 0.5s reveal 0.5s ease-out forwards; }
+.ready h1 { animation: 1s reveal ease-out forwards; }
+.ready h2 { animation: 0.5s reveal 0.5s ease-out forwards; }
 
-#card1.animated { animation: 0.5s reveal 0.8s ease-in forwards; }
-#card2.animated { animation: 0.5s reveal 0.9s ease-in forwards; }
-#card3.animated { animation: 0.5s reveal 1.0s ease-in forwards; }
-#card4.animated { animation: 0.5s reveal 1.1s ease-in forwards; }
-#card5.animated { animation: 0.5s reveal 1.2s ease-in forwards; }
-#card6.animated { animation: 0.5s reveal 1.3s ease-in forwards; }
+.ready #card1 { animation: 0.5s reveal 0.8s ease-in forwards; }
+.ready #card2 { animation: 0.5s reveal 0.9s ease-in forwards; }
+.ready #card3 { animation: 0.5s reveal 1.0s ease-in forwards; }
+.ready #card4 { animation: 0.5s reveal 1.1s ease-in forwards; }
+.ready #card5 { animation: 0.5s reveal 1.2s ease-in forwards; }
+.ready #card6 { animation: 0.5s reveal 1.3s ease-in forwards; }
 
-#button1.animated { animation: 0.4s slide-in 1.6s ease-in forwards; }
-#button2.animated { animation: 0.4s slide-in 1.6s ease-in forwards; }
+.ready #button1 { animation: 0.4s slide-in 1.6s ease-in forwards; }
+.ready #button2 { animation: 0.5s slide-in 1.6s ease-in forwards; }
 
+/*body.ready { animation: 5s background 5s linear infinite alternate;}*/
