@@ -1,7 +1,7 @@
 
 $(function() {
   var bgImages = 9;
-  var bgTransition = 4;
+  var bgTransition = 5;
 
   var transitionAdded = false;
 
@@ -24,7 +24,7 @@ $(function() {
       transitionAdded = true;
     }
     randomizeBG();
-    setTimeout(transition, bgTransition*2000);
+    setTimeout(transition, bgTransition*3000);
   }
 
   function run() {
