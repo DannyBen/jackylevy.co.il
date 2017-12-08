@@ -4,6 +4,5 @@ Site for Jacky Levy
 TODO
 --------------------------------------------------
 
-- [ ] Favicons
 - [ ] Analytics
-- [ ] Metadata
+- [ ] Favicons
