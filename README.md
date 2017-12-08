@@ -6,4 +6,4 @@ TODO
 
 - [ ] Favicons
 - [ ] Analytics
-
+- [ ] Metadata
