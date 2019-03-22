@@ -1,0 +1,4 @@
+/.git
+/_offline
+/*.sublime*
+/op.conf
