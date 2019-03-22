@@ -2,3 +2,4 @@
 /_offline
 /*.sublime*
 /op.conf
+.envrc
