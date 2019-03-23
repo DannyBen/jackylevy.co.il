@@ -29,17 +29,17 @@
 }
 
 body {
-  height: 100vh;
+  /*height: 100vh;*/
   background: black url("/img/1.jpg") center/cover no-repeat;
+  background-attachment: fixed;
   color: white;
-  overflow: hidden;
   font-family: arial;
 }
 
 #main {
   height: 100%;
   width: 100%;
-  position: relative;
+  padding: 0 10px 10px 10px;
 }
 
 section {
@@ -58,7 +58,7 @@ section {
 
 #footer {
   line-height: 1.5;
-  position: absolute;
+  position: fixed;
   text-align: center;
   width: 100%;
   font-family: 'Secular One', sans-serif;
@@ -144,6 +144,11 @@ h3 {
 
 /* mobile */
 @media ( max-width : 767px ) {
+  #article {
+    padding-bottom: 140px;
+  }
+
+  
   #main {
     padding: 10px;
   }
